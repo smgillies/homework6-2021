@@ -1,0 +1,197 @@
+/*Begin your code here*/
+/*Requirement 1*/
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  font-family: 'Raleway', sans-serif;
+  background-image: url("../images/concrete_seamless.png");
+  
+}
+
+/*Requirement 2*/
+header{
+  background: #fff;
+  border-bottom: 3px solid #50C7C7;
+  
+  display: flex;
+  flex-direction: column;
+  
+  flex-wrap: wrap;
+  align-items: center;
+  
+  
+}
+
+/*Requirement 3*/
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  /*Your code here again.*/
+}
+
+
+/*Requirement 4*/
+.price{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    /*Your code here*/
+
+    /*You must use flex.
+    /*Don't forget to vertically and horizontally 
+    align the element*/
+}
+
+/*Requirement 5*/
+.package {
+  margin: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 400px; 
+  
+  align-items: stretch;
+  
+  
+}
+
+.package header{
+  background: #288080;
+  border: 2px solid #45ADAD;
+  padding: 20px 0;
+  border-radius: 7px 7px 0 0;
+  
+}
+/*Requirement 8*/
+.gallery img{
+  border: 10px solid #50C7C7;
+  width: 300px;
+  margin: 10px;
+  
+}
+/*Requirement 7*/
+.gallery{
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*Your code here again.*/
+
+}
+
+
+
+/*Requirement 9*/
+#logo{
+  animation: logo_grow 15s; 
+  animation-iteration-count: 1;
+   /*Your code here.*/
+ 
+}
+
+/*Keyframes for animation*/
+@-webkit-keyframes logo_grow{
+  from{
+    width: 25px;
+    opacity: 0;
+  }
+  to{
+    width: 420px;
+    opacity: 1;
+  }
+  /*Your code here.*/
+  
+
+}
+
+@keyframes logo_grow{
+  /*Your code here.*/
+  from{
+    width: 25px;
+    opacity: 0;
+  }
+  to{
+    width: 420px;
+    opacity: 1;
+  }
+  
+
+}
+
+@media screen and (min-width: 850px){
+
+  /*Requirement 10*/
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*Your code here again.*/  
+  }
+
+  /*Requirement 10*/
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-between;
+    /*Your code here again.*/  
+  }
+
+  /*Requirement 11*/
+  .package {
+    /*Your code here again.*/
+    display: flex;
+    flex-basis: 230px;
+  } 
+}
+
+/*Requirement 12*/
+/*Add media query to handle reduced-motion*/
+/*Your code here again.*/ 
+
+@media all and (prefers-reduced-motion:reduce){
+  #logo{
+    animation:none;
+    
+  }
+}
+
+@media print { 
+  body{
+    background-image: none;
+  }
+  nav{
+    width: 100%;
+  }
+  .nav_links{
+    flex-direction:row;
+    justify-content: space-evenly;
+  }
+  .price{
+    align-items: flex-end;
+  }
+  .package{
+    border:2px solid #45ADAD;
+    flex-basis: 200px;
+  }
+  .gallery, #gallery{
+    display: none;
+  }
+  
+  /*Requirement 13*/
+  /*Requirement 14*/
+  /*Requirement 15*/
+  /*Requirement 16*/
+  /*Requirement 17*/
+  /*Requirement 18*/
+ 
+}
+
